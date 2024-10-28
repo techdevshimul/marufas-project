@@ -1,0 +1,441 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 60px 30px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ------------- Header ------------------ */
+nav,
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav.container {
+  padding: 10px 30px;
+}
+
+nav > a {
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+
+/* ------------- Hero ----------------- */
+
+.hero {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.hero > div > h1 {
+  font-size: 80px;
+}
+
+.hero > div > p {
+  color: rgb(160, 160, 160);
+}
+
+.hero img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* --------------- Our Clients ------------- */
+.our-clients {
+  text-align: center;
+}
+
+.our-clients > p {
+  color: rgb(160, 160, 160);
+}
+
+.our-clients > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+
+.our-clients > div > p {
+  padding: 20px 30px;
+  border: 1px solid white;
+  width: 100%;
+}
+
+/* ----------- About me ------------- */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-me > div:last-child {
+  align-self: flex-end;
+  width: 50%;
+}
+
+.about-me > div:first-child > a {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.about-me > div:first-child > p {
+  color: greenyellow;
+}
+
+.about-me > div:first-child > h2 {
+  font-size: 28px;
+}
+
+.about-me > div:last-child > p {
+  color: rgb(160, 160, 160);
+  text-align: justify;
+}
+
+.about-me > div:last-child > .about-me-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-card > h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.about-me-card > p {
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+  margin-top: 0;
+}
+
+/* ------------------- Banner _------------------- */
+
+.banner > div > h2 {
+  color: black;
+  text-wrap: nowrap;
+  overflow: hidden;
+  font-size: 36px;
+}
+
+.banner > div {
+  padding: 10px 30px;
+  background-color: greenyellow;
+}
+
+.banner.container {
+  padding: 0px 0px 60px 0px;
+}
+
+/* ------------ Service ------------- */
+.services > p,
+.services > h2 {
+  text-align: center;
+}
+
+.services > p {
+  color: greenyellow;
+}
+
+.services > h2 {
+  margin-bottom: 100px;
+  font-size: 36px;
+}
+
+.service > h1 > span {
+  color: greenyellow;
+}
+
+.service > h1 {
+  font-size: 28px;
+}
+
+.service-text {
+  display: flex;
+  justify-content: end;
+}
+
+.service-text > p {
+  width: 50%;
+  color: rgb(160, 160, 160);
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.service-cards > p {
+  border: 1px solid white;
+  padding: 30px 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.service {
+  margin-bottom: 60px;
+}
+
+.service:last-child {
+  margin-bottom: 0;
+}
+
+/* ----------- Portfolio ----------- */
+
+.portfolio-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+  padding: 60px 30px;
+}
+
+.portfolio-heading > div:first-child > p {
+  color: greenyellow;
+}
+
+.portfolio-heading > div:first-child > h2 {
+  font-size: 36px;
+}
+
+.portfolio-heading > div > a {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 15px;
+}
+
+.portfolio-projects > img {
+  max-width: 350px;
+  object-fit: cover;
+}
+
+.portfolio-projects {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  overflow: hidden;
+}
+
+/* ----------- Collab ------------ */
+.collab {
+  text-align: center;
+}
+
+.collab > p {
+  color: greenyellow;
+}
+
+.collab > h2 {
+  font-size: 72px;
+  font-weight: normal;
+}
+
+.collab > div {
+  margin-top: 30px;
+}
+
+.collab > div > a {
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+.collab > div > a:first-child {
+  background-color: greenyellow;
+  color: black;
+  border: none;
+}
+
+hr {
+  border: 1px solid rgb(34, 34, 34);
+}
+
+/* ------------------- Footer -------------- */
+footer.container {
+  padding: 0px 30px 60px 30px;
+}
+
+footer > div:first-child > p:last-child {
+  color: rgb(160, 160, 160);
+  margin-top: 40px;
+}
+
+footer,
+footer > div:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > div:last-child {
+  flex-direction: column;
+  text-align: end;
+}
+
+@media (max-width: 992px) {
+  .hero > div > img {
+    max-height: 400px !important;
+  }
+
+  .service-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-cards > p {
+    width: auto;
+  }
+
+  .banner > div > h2 {
+    font-size: 28px;
+  }
+
+  .portfolio-projects > img {
+    max-width: 250px;
+  }
+
+  .portfolio-projects {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero > div > h1 {
+    font-size: 48px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .our-clients > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our-clients > div > p {
+    width: auto;
+  }
+
+  .about-me-card > h2 {
+    font-size: 28px;
+  }
+
+  .about-me-card > p {
+    text-align: center;
+  }
+
+  .about-me-card {
+    margin-right: 10px;
+  }
+
+  .banner > div > h2 {
+    font-size: 18px;
+  }
+
+  footer {
+    gap: 50px;
+  }
+
+  .portfolio-heading > div > h2,
+  .services > h2 {
+    font-size: 28px !important;
+  }
+
+  .collab > h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 30px 10px;
+  }
+
+  .hero > div {
+    text-align: center;
+  }
+
+  .about-me > div:last-child {
+    width: 100%;
+  }
+
+  .banner > div > h2 {
+    font-size: 14px;
+  }
+
+  .banner > div {
+    padding: 10px;
+  }
+
+  .service-text > p {
+    width: 100%;
+  }
+
+  .service-cards > p {
+    margin: 5px;
+  }
+
+  .portfolio-heading {
+    flex-direction: column;
+    padding: 60px 10px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > div:last-child {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
